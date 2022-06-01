@@ -97,4 +97,10 @@
   #page-navbar {
     background-color: #d7d8da;
   }
+
+  .navbar-nav {
+    padding-top: 16px;
+    gap: 10px !important;
+  }
+
 }
