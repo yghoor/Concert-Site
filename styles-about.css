@@ -59,6 +59,10 @@
 .see-previous hr {
   width: 25px;
 }
+
+.partners {
+  background-color: #424146;
+}
 .mozilla {
   font-family: "Zilla Slab", serif;
   color: #b4b4b4;
