@@ -112,3 +112,9 @@ hr {
   font-family: "Raleway", sans-serif;
   color: #828282;
 }
+
+@media only screen and (max-width: 768px) {
+  #page-navbar {
+    background-color: #d7d8da;
+  }
+}
