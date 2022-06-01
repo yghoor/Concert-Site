@@ -83,3 +83,28 @@
 .partners {
   background-color: #424146;
 }
+
+.mozilla {
+  font-family: "Zilla Slab", serif;
+  color: #b4b4b4;
+}
+
+.google {
+  font-family: "Montserrat", sans-serif;
+  color: #707072;
+}
+
+.naver {
+  font-family: "Fira Sans", sans-serif;
+  color: #909090;
+}
+
+.daumkakao {
+  font-family: "Roboto", sans-serif;
+  color: #8a8a8a;
+}
+
+.airbnb {
+  font-family: "Raleway", sans-serif;
+  color: #828282;
+}
