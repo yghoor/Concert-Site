@@ -70,3 +70,12 @@
 .program-layout .card-img-top {
   max-width: 45%;
 }
+
+#speakers-list .card hr {
+  width: 25px;
+}
+
+#speakers-list .card img {
+  width: 300px;
+  height: 245px;
+}
