@@ -71,6 +71,10 @@
   max-width: 45%;
 }
 
+hr {
+  width: 50px;
+}
+
 #speakers-list .card hr {
   width: 25px;
 }
