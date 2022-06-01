@@ -56,3 +56,9 @@
   font-weight: 950;
   -webkit-font-smoothing: antialiased;
 }
+
+.program-layout {
+  background-image: url(images/background-images/program-layout-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
