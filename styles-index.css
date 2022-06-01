@@ -62,3 +62,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.program-layout .card {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.program-layout .card-img-top {
+  max-width: 45%;
+}
