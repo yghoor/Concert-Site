@@ -54,6 +54,11 @@
 .page-seperator {
   opacity: 0.1;
 }
+
+.logo-section hr,
+.see-previous hr {
+  width: 25px;
+}
 .mozilla {
   font-family: "Zilla Slab", serif;
   color: #b4b4b4;
