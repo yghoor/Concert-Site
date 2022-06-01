@@ -31,6 +31,10 @@
   font-family: "COCOGOOSE Regular", sans-serif !important;
 }
 
+.current-page {
+  color: #ec5242 !important;
+}
+
 .top-bar {
   background-color: #272a31;
 }
