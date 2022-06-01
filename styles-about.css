@@ -50,6 +50,10 @@
   font-family: "COCOGOOSE Regular", sans-serif;
   font-weight: 950;
 }
+
+.page-seperator {
+  opacity: 0.1;
+}
 .mozilla {
   font-family: "Zilla Slab", serif;
   color: #b4b4b4;
