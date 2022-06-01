@@ -11,6 +11,17 @@
   src: local("COCOGOOSE Regular"), url("/fonts/cocogoose_trial.woff") format("woff");
 }
 
+.theme-color-orange {
+  color: #ec5242;
+}
+
+.theme-color-grey {
+  color: #686868;
+}
+
+.theme-color-black {
+  color: #272a31;
+}
 .top-bar {
   background-color: #272a31;
 }
