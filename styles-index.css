@@ -38,3 +38,9 @@
 .top-bar {
   background-color: #272a31;
 }
+
+.hero-section {
+  background-image: url(images/background-images/desktop-background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
