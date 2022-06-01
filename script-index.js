@@ -50,3 +50,65 @@ const speakers = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
   },
 ];
+
+const speakerSection = document.getElementById('speaker-section');
+
+const speakersMain = document.createElement('div');
+speakersMain.className = 'container d-flex flex-column justify-content-center align-items-center';
+
+speakersMain.innerHTML = 
+`<h2 class="mb-0 mt-4 pt-5">Featured Speakers</h2>
+
+<hr class="theme-color-orange opacity-100 mt-3 mb-5">
+
+<div id="speakers-list" class="row row-cols-1 row-cols-xl-2"></div>`;
+
+speakerSection.appendChild(speakersMain);
+
+const speakersList = document.getElementById('speakers-list');
+
+speakers.forEach((speaker, speakerNum) => {
+  const speakerDiv = document.createElement('div');
+  speakerDiv.classList.add('col');
+  speakerDiv.innerHTML =
+  `<div class="card d-flex flex-row border-0 my-5">
+    <img src="${speakers[speakerNum].image}" alt="Picture of Speaker" class="" />
+    <div class="card-body">
+      <h5 class="fs-4 fw-bold card-title my-2">${speakers[speakerNum].name}</h5>
+
+      <p class="fs-6 fst-italic theme-color-orange">${speakers[speakerNum].workInfo}</p>   
+
+      <hr class="theme-color-grey opacity-50">
+      
+      <p class="fs-6">
+        ${speakers[speakerNum].description}
+      </p>
+    </div>
+  </div>`;
+
+  speakersList.appendChild(speakerDiv);
+
+  if (speakerNum > 1) {
+    speakerDiv.firstChild.className = 'card d-none d-md-flex flex-row border-0 my-5';
+  }
+});
+
+const moreButton = document.createElement('button');
+moreButton.className = 'btn d-md-none d-flex flex-row justify-content-center gap-2 bg-white border border-1 w-100 fs-5 py-3 mb-5';
+moreButton.setAttribute('onclick', 'showMoreSpeakers()');
+moreButton.innerHTML = 
+`MORE
+<img src="images/icons/expand-speakers-icon.png" alt="" class=''>`;
+
+speakersMain.appendChild(moreButton);
+
+cardList = document.getElementsByClassName('card d-none');
+
+function showMoreSpeakers() {
+  for (let i = 0; i < cardList.length;) {
+    cardList[i].classList.remove('d-none');
+    if (i >= cardList.length) {
+      speakersMain.removeChild(moreButton);
+    }
+  }
+}
