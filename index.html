@@ -32,6 +32,74 @@
           </div>
         </div>
         <nav id="page-navbar" class="navbar navbar-expand-md">
+          <div class="container">
+            <a
+              class="d-flex gap-3 navbar-brand link-danger fs-3 fw-bold"
+              href="index.html"
+            >
+              <img src="images/icons/logo-icon.svg" alt="" class="d-none d-md-inline-block" />
+              <p class="current-page m-0 d-none d-xl-block font-lato">The Art of Music</p>
+              <p class="m-0 d-none d-md-block d-xl-none font-lato">AoM</p>
+            </a>
+
+            <button
+              id="menu-button"
+              class="navbar-toggler me-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobile-navbar"
+              aria-controls="mobile-navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="changeIcon()"
+            >
+              <span id="hamburger-icon" class="fs-1 fw-bold">&#x2630</span>
+              <span id="close-icon"class="fs-1 fw-bold d-none" aria-hidden="true">X</span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse font-lato"
+              id="mobile-navbar"
+            >
+              <ul
+                class="navbar-nav gap-4 ms-auto d-flex flex-column flex-md-row align-items-start align-items-md-center ps-3"
+              >
+                <li class="nav-item">
+                  <a class="current-page d-block d-md-none nav-link link-dark theme-color-grey" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a id="current-page" class="nav-link link-dark theme-color-grey" href="about.html"
+                    >About</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-dark theme-color-grey" href="#">Program</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-dark theme-color-grey" href="#">Join</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-dark theme-color-grey" href="#">Sponsor</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-dark theme-color-grey" href="#">News</a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-danger border border-4 border-danger theme-color-orange px-3"
+                    href="#"
+                    >CC Campaign</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
     </main>
