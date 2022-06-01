@@ -17,6 +17,95 @@
 </html>
 
 <body>
+  <main class="main-page d-flex flex-column justify-content-center">
+    <header class="container-fluid p-0">
+      <div class="top-bar font-lato d-none d-md-flex">
+        <div class="container d-flex justify-content-end gap-4 pt-2 pb-1">
+          <a href="#">
+            <img src="images/icons/facebook-icon-light.svg" alt="Facebook Link" />
+          </a>
+          <a href="#">
+            <img src="images/icons/twitter-icon-light.svg" alt="Github Link" />
+          </a>
+          <a href="#" class="text-white text-decoration-none">My page</a>
+          <a href="#" class="text-white text-decoration-none">English</a>
+          <a href="#" class="text-white text-decoration-none">Logout</a>
+        </div>
+      </div>
+      <nav id="page-navbar" class="navbar navbar-expand-md">
+        <div class="container">
+          <a
+            class="d-flex gap-3 navbar-brand link-dark fs-3 fw-bold"
+            href="index.html"
+          >
+            <img src="images/icons/logo-icon.svg" alt="" class="d-none d-md-inline-block" />
+            <p class="m-0 d-none d-xl-block font-lato">The Art of Music</p>
+            <p class="m-0 d-none d-md-block d-xl-none font-lato">AoM</p>
+          </a>
+
+          <button
+              id="menu-button"
+              class="navbar-toggler me-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobile-navbar"
+              aria-controls="mobile-navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="changeIcon()"
+          >
+              <span id="hamburger-icon" class="fs-1 fw-bold">&#x2630</span>
+              <span id="close-icon"class="fs-1 fw-bold d-none" aria-hidden="true">X</span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse font-lato"
+            id="mobile-navbar"
+          >
+            <ul
+              class="navbar-nav gap-4 ms-auto d-flex flex-column flex-md-row align-items-start align-items-md-center ps-3"
+            >
+              <li class="nav-item">
+                <a class="d-block d-md-none nav-link link-dark theme-color-grey" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="current-page nav-link link-dark theme-color-grey" href="about.html"
+                  >About</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-dark theme-color-grey" href="#">Program</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-dark theme-color-grey" href="#">Join</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-dark theme-color-grey" href="#">Sponsor</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-dark theme-color-grey" href="#">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link link-dark border border-4 border-danger theme-color-orange px-3"
+                  href="#"
+                  >CC Campaign</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  </main>
+
   <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
