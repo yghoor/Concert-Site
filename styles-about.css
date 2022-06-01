@@ -103,4 +103,7 @@
     gap: 10px !important;
   }
 
+  .hero-text {
+    font-size: 45px;
+  }
 }
