@@ -126,4 +126,12 @@ hr {
   .hero-text {
     font-size: 45px;
   }
+
+  .program-layout .card {
+    padding-left: 16px;
+  }
+
+  .program-layout .card-img-top {
+    width: 20vh;
+  }
 }
