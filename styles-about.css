@@ -31,6 +31,14 @@
   font-family: "COCOGOOSE Regular", sans-serif !important;
 }
 
+.top-bar {
+  background-color: #272a31;
+}
+
+.current-page {
+  color: #ec5242 !important;
+}
+
 .mozilla {
   font-family: "Zilla Slab", serif;
   color: #b4b4b4;
