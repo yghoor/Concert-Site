@@ -71,6 +71,10 @@
   max-width: 45%;
 }
 
+.program-layout button {
+  background-color: #ec5242;
+}
+
 hr {
   width: 50px;
 }
