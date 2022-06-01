@@ -63,6 +63,11 @@
 .partners {
   background-color: #424146;
 }
+
+.partners hr {
+  width: 50px;
+}
+
 .mozilla {
   font-family: "Zilla Slab", serif;
   color: #b4b4b4;
