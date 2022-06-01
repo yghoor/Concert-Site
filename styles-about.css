@@ -39,6 +39,11 @@
   color: #ec5242 !important;
 }
 
+.hero-section {
+  background-image: url(images/background-images/desktop-background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .mozilla {
   font-family: "Zilla Slab", serif;
   color: #b4b4b4;
