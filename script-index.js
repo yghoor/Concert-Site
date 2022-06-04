@@ -1,7 +1,7 @@
-const menuButton = document.getElementById('menu-button');
 const openIcon = document.getElementById('hamburger-icon');
 const closeIcon = document.getElementById('close-icon');
 
+// eslint-disable-next-line no-unused-vars
 function changeIcon() {
   if (closeIcon.classList.contains('d-none')) {
     closeIcon.classList.remove('d-none');
@@ -17,37 +17,37 @@ const speakers = [
     name: 'Dorothy Smith',
     image: 'images/speakers/dorothy-smith.jpg',
     workInfo: 'An example of the speaker\'s current job and position',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
   },
   {
     name: 'Fonje Distry',
     image: 'images/speakers/fonje-distry.jpg',
     workInfo: 'An example of the speaker\'s current job and position',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
   },
   {
     name: 'Ingrid Son',
     image: 'images/speakers/ingrid-son.jpg',
     workInfo: 'An example of the speaker\'s current job and position',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
   },
   {
     name: 'James Dodes',
     image: 'images/speakers/james-dodes.jpg',
     workInfo: 'An example of the speaker\'s current job and position',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
   },
   {
     name: 'Jim Genes',
     image: 'images/speakers/jim-genes.jpg',
     workInfo: 'An example of the speaker\'s current job and position',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
   },
   {
     name: 'Rodríguez Jóhannsson',
     image: 'images/speakers/rodríguez-jóhannsson.jpg',
     workInfo: 'An example of the speaker\'s current job and position',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
   },
 ];
 
@@ -56,8 +56,8 @@ const speakerSection = document.getElementById('speaker-section');
 const speakersMain = document.createElement('div');
 speakersMain.className = 'container d-flex flex-column justify-content-center align-items-center';
 
-speakersMain.innerHTML = 
-`<h2 class="mb-0 mt-4 pt-5">Featured Speakers</h2>
+speakersMain.innerHTML = `
+<h2 class="mb-0 mt-4 pt-5">Featured Speakers</h2>
 
 <hr class="theme-color-orange opacity-100 mt-3 mb-5">
 
@@ -70,8 +70,8 @@ const speakersList = document.getElementById('speakers-list');
 speakers.forEach((speaker, speakerNum) => {
   const speakerDiv = document.createElement('div');
   speakerDiv.classList.add('col');
-  speakerDiv.innerHTML =
-  `<div class="card d-flex flex-row border-0 my-5">
+  speakerDiv.innerHTML = `
+  <div class="card d-flex flex-row border-0 my-5">
     <img src="${speakers[speakerNum].image}" alt="Picture of Speaker" class="" />
     <div class="card-body">
       <h5 class="fs-4 fw-bold card-title my-2">${speakers[speakerNum].name}</h5>
@@ -96,14 +96,15 @@ speakers.forEach((speaker, speakerNum) => {
 const moreButton = document.createElement('button');
 moreButton.className = 'btn d-md-none d-flex flex-row justify-content-center gap-2 bg-white border border-1 w-100 fs-5 py-3 mb-5';
 moreButton.setAttribute('onclick', 'showMoreSpeakers()');
-moreButton.innerHTML = 
-`MORE
+moreButton.innerHTML = `
+MORE
 <img src="images/icons/expand-speakers-icon.png" alt="" class=''>`;
 
 speakersMain.appendChild(moreButton);
 
-cardList = document.getElementsByClassName('card d-none');
+const cardList = document.getElementsByClassName('card d-none');
 
+// eslint-disable-next-line no-unused-vars
 function showMoreSpeakers() {
   for (let i = 0; i < cardList.length;) {
     cardList[i].classList.remove('d-none');
