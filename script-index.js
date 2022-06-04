@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 const openIcon = document.getElementById('hamburger-icon');
 const closeIcon = document.getElementById('close-icon');
 
-// eslint-disable-next-line no-unused-vars
 function changeIcon() {
   if (closeIcon.classList.contains('d-none')) {
     closeIcon.classList.remove('d-none');
@@ -104,7 +104,6 @@ speakersMain.appendChild(moreButton);
 
 const cardList = document.getElementsByClassName('card d-none');
 
-// eslint-disable-next-line no-unused-vars
 function showMoreSpeakers() {
   for (let i = 0; i < cardList.length;) {
     cardList[i].classList.remove('d-none');
