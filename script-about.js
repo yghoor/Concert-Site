@@ -1,4 +1,3 @@
-const menuButton = document.getElementById('menu-button');
 const openIcon = document.getElementById('hamburger-icon');
 const closeIcon = document.getElementById('close-icon');
 
