@@ -71,7 +71,7 @@ speakers.forEach((speaker, speakerNum) => {
   const speakerDiv = document.createElement('div');
   speakerDiv.classList.add('col');
   speakerDiv.innerHTML = `
-  <div class="card d-flex flex-row border-0 my-5">
+  <div id="book-${speakerNum}">
     <img src="${speakers[speakerNum].image}" alt="Picture of Speaker" class="" />
     <div class="card-body">
       <h5 class="fs-4 fw-bold card-title my-2">${speakers[speakerNum].name}</h5>
