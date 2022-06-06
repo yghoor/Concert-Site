@@ -89,7 +89,7 @@ speakers.forEach((speaker, speakerNum) => {
   speakersList.appendChild(speakerDiv);
 
   if (speakerNum > 1) {
-    speakerDiv.firstChild.className = 'card d-none d-md-flex flex-row border-0 my-5';
+    document.getElementById(`book-${speakerNum}`).className = 'card d-none d-md-flex flex-row border-0 my-5';
   }
 });
 
