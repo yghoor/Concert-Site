@@ -93,6 +93,18 @@
   color: #828282;
 }
 
+footer {
+  background-color: #272a31 !important;
+}
+
+.footer-logo {
+  color: #ec5242;
+}
+
+.footer-text {
+  color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
   #page-navbar {
     background-color: #d7d8da;
@@ -105,5 +117,13 @@
 
   .hero-text {
     font-size: 45px;
+  }
+
+  footer {
+    background-color: #fff !important;
+  }
+
+  .footer-text {
+    color: #000;
   }
 }
