@@ -71,7 +71,7 @@ speakers.forEach((speaker, speakerNum) => {
   const speakerDiv = document.createElement('div');
   speakerDiv.classList.add('col');
   speakerDiv.innerHTML = `
-  <div id="book-${speakerNum}">
+  <div id="speaker-${speakerNum}" class="card d-flex flex-row border-0 my-5">
     <img src="${speakers[speakerNum].image}" alt="Picture of Speaker" class="" />
     <div class="card-body">
       <h5 class="fs-4 fw-bold card-title my-2">${speakers[speakerNum].name}</h5>
@@ -89,7 +89,7 @@ speakers.forEach((speaker, speakerNum) => {
   speakersList.appendChild(speakerDiv);
 
   if (speakerNum > 1) {
-    document.getElementById(`book-${speakerNum}`).className = 'card d-none d-md-flex flex-row border-0 my-5';
+    document.getElementById(`speaker-${speakerNum}`).className = 'card d-none d-md-flex flex-row border-0 my-5';
   }
 });
 
