@@ -139,3 +139,10 @@ hr {
     width: 20vh;
   }
 }
+
+@media only screen and (max-width: 472px) {
+  #speakers-list .card img {
+    width: 200px;
+    height: 163px;
+  }
+}
