@@ -24,7 +24,7 @@
 }
 
 .font-lato {
-  font-family: "Lato", sans-serif !important;
+  font-family: Lato, sans-serif !important;
 }
 
 .font-cocogoose {
@@ -40,13 +40,13 @@
 }
 
 .hero-section {
-  background-image: url(images/background-images/desktop-background-image.jpg);
+  background-image: url("images/background-images/desktop-background-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero-text {
-  background-image: url(images/background-images/hero-text-background.jpg);
+  background-image: url("images/background-images/hero-text-background.jpg");
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,13 +58,13 @@
 }
 
 .program-layout {
-  background-image: url(images/background-images/program-layout-background.jpg);
+  background-image: url("images/background-images/program-layout-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .program-layout .card {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255 255 255 / 15%);
 }
 
 .program-layout .card-img-top {
@@ -98,7 +98,7 @@ hr {
 }
 
 .google {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #707072;
 }
 
@@ -108,12 +108,12 @@ hr {
 }
 
 .daumkakao {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: #8a8a8a;
 }
 
 .airbnb {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   color: #828282;
 }
 
