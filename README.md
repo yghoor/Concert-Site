@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://yghoor.github.io/Conference-Site/)
+[Live Demo Link](https://yghoor.github.io/event-site/)
 
 ## Author
 
